@@ -1,0 +1,20 @@
+li {
+  cursor: pointer;
+}
+
+li.default:hover {
+  background-color: #f5f5f5;
+}
+
+.btn {
+  font-family: "Roboto Slab";
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}

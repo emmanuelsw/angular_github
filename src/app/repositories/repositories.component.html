@@ -13,7 +13,10 @@
       </li>
 
       <li class="default collection-item" *ngFor="let repo of repositories" (click)="setMainRepository(repo)">
-        <h3>{{ repo.name }}</h3>
+        <div style="display: inline;" *ngIf="repo.stargazers_count > 0">
+           <i class="material-icons">star</i>
+        </div>
+        <h3 style="display: inline;">{{ repo.name }}</h3>
         <p>{{ repo.description }}  <span class="new badge" data-badge-caption="">{{ repo.language }}</span></p>
       </li>
 
